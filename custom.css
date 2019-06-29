@@ -8,7 +8,7 @@
 
 
 .canvas {
-position: relative;
+position: absolute;
 top: 0;
 left: 0;
 width: 100%;
@@ -173,7 +173,6 @@ color: #fbbc05;
 }
 .full-height {
 height: 100vh;
-background:#232f3e;
 }
 
 #intro.section .container {
@@ -432,6 +431,7 @@ position: relative;
 top: 64px;
 }
 section#intro {
+margin-bottom: -128px !important;
 }
 .card .role {
 position: relative;
@@ -475,6 +475,5 @@ text-align: center;
 margin: 0 auto;
 }
 #intro.section {
-background-position-x: 30%;
 }
 }
