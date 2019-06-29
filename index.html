@@ -4,501 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <!-- Materialize - Compiled and minified CSS-->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    
     <!-- Font Awesome Icon - CSS-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  	<script src="points.min.js"></script>
-
-
+      
+    <script src="points.min.js"></script>
     <!-- Custom Styles-->
-    <style type="text/css">
-    	.logo:hover, .bold:hover{
-    		background-color: transparent !important;
-    	}
-    	.logo:hover #logo-container h1{
-    		color: #EB7B1B !important;
-    	}
-    	
-
-    	
-    	.canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.z-depth-1{
-	box-shadow: none;
-}
-.ccc{
-	color: #ccc;
-}
-.gtex{
-	font-size: 1rem; 
-	font-weight: 600; 
-	color: #232f3e;
-}
-.gblue{
-	background-color:#232f3e;
-}
-
-.gblue:hover {
-	background-color:#232f3e;
-}
-.gblue:hover i{
-	color:#EB7B1B;
-}
-.btn-floating i{
-	color:#fbbc05;
-}
-ul.side-nav.fixed.table-of-contents .bold:hover .mab span, .mab{
-	color: #04C2C9 !important;
-}
-ul.side-nav.fixed.table-of-contents .bold:hover .mex span, .mex{
-	color: #FF3F8E !important;
-}
-ul.side-nav.fixed.table-of-contents .bold:hover .msk span, .msk{
-	color: #febd69 !important;
-}
-ul.side-nav.fixed.table-of-contents .bold:hover .med span, .med{
-	color: #8580ca !important;
-}
-ul.side-nav.fixed.table-of-contents .bold:hover .mco span, .mco{
-	color: #ffa42e !important;
-}
-ul.side-nav.fixed.table-of-contents .bold:hover .mre span, .mre{
-	color: #F63F3A !important;
-
-}
-
-.y-txt{
-	color: #fbbc05;
-}
-    html{
-        font-family:arial, Helvetica,sans-serif !important;
-
-    }
-    body {
-	color: #333;
-	font-size: 16px;
-}
-a {
-	color: #232f3e;
-	font-size: 1.2rem;
-    font-weight: 600;
-
-}
-blockquote {
-	border-left: 5px solid #795548;
-	color: #795548;
-	font-size: 125%;
-	font-weight: 400;
-	margin: 20px 0;
-	padding-left: 1.5rem;
-}
-blockquote * {
-  font-size: inherit;
-  line-height: inherit;
-}
-.text-center {
-	text-align: center;
-}
-nav {
-	background: white;
-	box-shadow: none;
-	height: 0;
-}
-nav i {
-	padding: 0 15px;
-	position: relative;
-	top: 5px;
-}
-main {
-	padding-left: 190px;
-}
-ul.side-nav {
-	width: 190px;
-	background:#232f3e;
-	box-shadow: none;
-	}
-ul.side-nav li {
-	padding: 0;
-}
-ul.side-nav.fixed a {
-	box-sizing: content-box;
-	color: #444;
-	display: block;
-	line-height: 100%;
-	padding: 10px 0 12px;
-}
-ul.table-of-contents li.logo a.active,
-ul.table-of-contents li.logo a:hover {
-	border: none;
-	font-weight: 200;
-}
-ul.side-nav.fixed li.logo {
-	box-sizing: content-box;
-	min-height: 90px;
-	padding: 20px;
-}
-ul.side-nav.fixed li.logo a {
-	font-weight: 200;
-	line-height: 100%;
-}
-ul.table-of-contents li:not(.logo) a.active,
-ul.table-of-contents li:not(.logo) a:hover {
-	border-left: 3px solid ;
-}
-ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
-ul#slide-out li:not(.logo) a span {
-	color: #ccc !important;
-}
-li.logo span {
-	display: block;
-	font-size: 14px;
-}
-.brand-logo h1 {
-	font-size: inherit;
-  line-height: inherit;
-  margin: inherit;
-  font-weight: inherit;
-  color: #fbbc05;
-  font-size: 1.6rem;
-
-}
-.container {
-	width: 95%
-}
-h3 {
-	font-weight: 200;
-	margin-bottom: 60px;
-	margin-top: 0;
-	padding: 30px 40px;
-	text-transform: uppercase;
-}
-.section {
-	padding-bottom: 30px;
-	padding-top: 0;
-}
-.highlight{
-	color: #fbbc05;
-}
-.full-height {
-	height: 100vh;
-}
-
-#intro.section .container {
-	position: absolute;
-	left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#intro.section .container *:not(span) {
-	color:#fff;
-	font-size: 2.1rem;
-}
-#intro.section .underline {
-	border-bottom: 5px solid #009688;
-}
-#intro.section .teal {
-	padding: 0 10px;
-}
-.overlay {
-	background-color: rgba(0, 0, 0, 0.4);
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-}
-.waves-effect.waves-blue .waves-ripple {
-   /* The alpha value allows the text and background color
-   of the button to still show through. */
-    background-color: rgba(33, 150, 243, 0.2);
- }
-.card {
-	margin-bottom: 60px;
-}
-.card .role {
-	font-size: 1.25rem;
-  position: absolute;
-  right: 38px;
-  top: 35px;
-}
-.card li a {
-	margin-right: 0;
-	color: #333;
-	border-bottom: 2px solid #ffab40;
-}
-.card li a:hover {
-	color: #333;
-	font-weight: 500;
-}
-.card .card-content {
-	padding-bottom: 30px;
-}
-.card .card-content p {
-	padding: 5px 0 0;
-}
-.card h5 {
-  font-size: 1.5rem;
-  margin-bottom: -0.5rem;
-  margin-top: 2rem;
-}
-.card h6 {
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin-top: 2rem;
-  text-transform: uppercase;
-}
-#experience .card-action {
-	background-color: rgba(0,0,0,0.02);
-	border: none;
-}
-#experience .card .col.s12.m2 a {
-  display: block;
-}
-#experience .card .col.s12.m2 a img {
-  max-height: 60px;
-}
-.card-action span {
-	font-size: 85%;
-	color: #666;
-}
-.card ul {
-	margin-bottom: 0;
-}
-.card ul li {
-	line-height: 200%;
-	list-style-type: disc;
-	margin-left: 24px;
-}
-.card ul li li {
-  color: #666;
-  font-size: 13px;
-}
-.card .card-title {
-	font-size: 24px;
-}
-.card .card-content .card-title {
-	line-height: 2.5rem
-}
-.card i.right {
-  margin-left: 10px;
-}
-a.hoverline {
-	border-bottom: 3px solid transparent !important;
-	padding: 3px 3px 0 3px;
-	transition: .25s all;
-	-moz-transition: .25s all;
-	-webkit-transition: .25s all;
-}
-a.hoverline:hover {
-	border-bottom: 3px solid #fbbc05 !important;
-}
-#skills .card.large {
-	height: 360px;
-}
-#skills h4 {
-	border-bottom: 1px solid #ddd;
-	margin-bottom: 30px;
-	padding-bottom: 20px;
-}
-#skills .col img.responsive-img {
-	margin: 0 auto;
-	max-height: 100px;
-	padding-bottom: 10px;
-	text-align: center;
-	vertical-align: middle;
-  display: table-cell;
-}
-.card.large .card-content p {
-	color: inherit;
-	margin: 0;
-	padding: 30px 0;
-}
-#experience .card-content .row {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
-.card.large .card-image {
-	height: 230px;
-}
-.card.large .card-content {
-	height: auto;
-}
-.card.medium .card-image {
-	height: 240px;
-}
-.card-action a.btn-floating {
-	margin-bottom: 0;
-}
-
-#contact a:not(.btn-floating) {
-	bottom: 6px;
-	left: 20px;
-	position: relative;
-}
-#experience .col.s12.m2 {
-	text-align: center;
-}
-.fa-external-link:before {
-  left: 3px;
-  position: relative;
-  top: 2px;
-}
-small { display: none;}
-.grey-text {
-	color: #666 !important;
-}
-.teal-text {
-	color: #232f3e !important
-}
-.teal {
-	background-color: #232f3e !important
-}
-@media (min-width: 1200px) {
-	#experience .container {
-		width: 860px
-	}
-}
-@media (max-width: 1360px) {
-	.card ul li {
-		font-size: 14px;
-		line-height: 200%;
-		margin-left: 20px;
-	}
-}
-@media (max-width: 1160px) {
-	.card ul li {
-		line-height: 150%;
-	}
-}
-@media (max-width: 992px) {
-	main {
-		padding-left: 0px;
-		padding-top: 64px;
-	}
-	ul.side-nav a {
-	  line-height: 100%;
-	  padding: 0;
-	  width: 100%;
-	}
-	nav {
-		background: #232f3e;
-		height: 64px;
-		position: absolute;
-	}
-	nav a.button-collapse,
-	nav a.button-collapse i {
-		color: #fbbc05;
-		height: 56px;
-		line-height: 56px;
-	}
-	h3 {
-		padding: 20px 30px;
-  	margin-bottom: 40px;
-	}
-	.container {
-		margin:  0 auto;
-	}
-
-	nav.hide-on-large.only.trigger {
-		display: block;
-	  position: fixed;
-	  top: 0;
-	  z-index: 2;
-	}
-	.name-title {
-	  display: block;
-	  height: 100%;
-	  padding-top: 15px;
-	  text-align: center;
-	  width: 100%;
-    position: absolute;
-	}
-	.name-title > span,
-	.name-title > a {
-    position: relative;
-    line-height: 20px;
-	}
-	.name-title a {
-    font-size: 22px;
-    display: block;
-	}
-	.name-title span {
-    display: block;
-    font-size: 14px;
-	}
-	h3,
-	.container {
-    position: relative;
-    top: 64px;
-	}
-	section#intro {
-	    margin-bottom: -128px;
-	}
-	.card .role {
-    position: relative;
-    right: initial;
-    top: initial;
-	}
-}
-@media (max-width: 600px) {
-	h2 {
-	  font-size: 22px;
-	  line-height: 200%;
-	  margin: 30px 0 0;
-	}
-	#intro.section .container *:not(span) {
-		padding: 0;
-	}
-	.card .card-content .card-title {
-    font-size: 20px;
-    line-height: 24px;
-	}
-	#experience span.card-title {
-    text-align: center;
-    display: block
-	}
-	#experience span.card-title a {
-	   margin: 0;
-	}
-	i.mdi-navigation-close.right {
-	  position: relative;
-	  bottom: 35px;
-	}
-	#contact a:not(.btn-floating) {
-    text-align: center;
-    display: block;
-    left: initial;
-    bottom: initial;
-	}
-	#contact a.btn-floating.btn-large {
-	    display: block;
-	    text-align: center;
-	    margin: 0 auto;
-	}
-	#intro.section {
-		background-position-x: 30%;
-	}
-}
-    </style>
-
-
+    <link rel="stylesheet" href="custom.css">
     <title>Gopinath A K | Full Stack Developer</title>
-    
-    </head>
+  </head>
   <body>
     <!-- Navigation Menu-->
     <nav class="hide-on-small-only">
@@ -510,7 +28,7 @@ small { display: none;}
         <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark msk"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark med"><i class="mdi-social-school small"></i><span>Education</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark mco"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-        <li class="bold"><a aria-label="Open Andrew's resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark  mre"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+        <li class="bold"><a aria-label="Open Andrew's resume in a new tab" href="" target="_blank" class="waves-effect waves-dark  mre"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
       </ul>
     </nav>
     <nav class="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -524,7 +42,7 @@ small { display: none;}
         <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark msk"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark med"><i class="mdi-social-school small"></i><span>Education</span></a></li>
         <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark mco"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
-        <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="https://docs.google.com/document/d/1evlvmAcOmPTttl1isyX_UcQbLO5pK8OwB4Rs2Sv4riY" target="_blank" class="waves-effect waves-dark  mre"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+        <li class="bold"><a aria-label="Open Andrew's Resume in a new tab" href="" target="_blank" class="waves-effect waves-dark  mre"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
       </ul>
     </nav>
     <!-- Main Content-->
@@ -532,23 +50,17 @@ small { display: none;}
       <section id="intro" class="section scrollspy full-height">
       	    <div id="pt" class="canvas">
       	    	<div class="container">
-				<div class="text">
-        Hello, I'm <span class="highlight">Gopinath A K</span>
-        <br>
-        I'm a full-stack web developer.
-      </div>
-        	</div>
-      	    </div>
-
-        	
+				  <div class="text">Hello, I'm <span class="highlight">Gopinath A K</span><br>I'm a full-stack web developer.</div>
+        	    </div>
+      	    </div>   	
       </section>
       <section id="about" class="section scrollspy">
         <h3 class="page-title mab teal">About</h3>
         <div class="container" style="padding-bottom: 50px;">
           <blockquote>
-            <h2>Mission-driven full stack developer with a passion for thoughtful UI design, collaboration, and teaching.</h2>
+            <h2>Mission-driven full stack developer with a passion for thoughtful UI design and solving complex problems.</h2>
           </blockquote>
-          <p class="gtex" style="font-size: 1.3rem;">I’ve always sought out opportunities and challenges that are meaningful to me. Although my professional path has taken many twists and turns — from touring and recording artist, to employee of the year at a non-profit, to dean's scholar at UPenn, to small business owner and entrepreneur — I've never stopped engaging my passion to help others and solve problems.</p>
+          <p class="gtex" style="font-size: 1.3rem;">Passionate PHP developer with 5+ years of experience in designing and developing dynamic web application, Designed layouts and templates for wide range of clients, understanding their requirements and translating into code to add new features or modifications for existing products. Having an enthusiasm and passion to complete projects to the highest standard.</p>
         </div>
       </section>
       <section id="experience" class="section scrollspy">
@@ -563,12 +75,15 @@ small { display: none;}
               </div>
               <div class="role" style="color: #232f3e; font-weight: 600; font-size: 1rem;">PHP Developer</div>
              <ul>
-             	<li class="gtex">Integration of user-facing elements developed by front-end developers.</li>
+                <li class="gtex">Working in PHP, MYSQL, Jquery and with Laravel framework.</li>
+                <li class="gtex">Integration of user-facing elements developed by front-end developers.</li>
                 <li class="gtex">Integration of data (MYSQL) storage solutions.</li>
+                <li class="gtex">Writing Clean structured and well documented code.</li>
                 <li class="gtex">Build efficient, testable, and reusable PHP modules.</li>
                 <li class="gtex">Solve complex performance problems.</li>
-                <li class="gtex">Exposed to Laravel Framework.</li>
-             </ul>
+                <li class="gtex">Ensuring that buisness requirments and functional specifications for the module coded by the team are tested and fulfilled before the code is deliverd for integration.</li>
+
+            </ul>
             </div>
             <div class="card-action"><span>May 2016 - Present  |  Chennai, Tamilnadu, India.</span></div>
           </div>
