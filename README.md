@@ -14,7 +14,7 @@ I'm a full-stack web developer.
 
 
 2.Exprience:   
-   1.Kutty - PHP Developer
+   1.Yaksha Visual Technologies - PHP Developer
       -- May, 2016 - Present.
       -- Working in PHP, MYSQL, Jquery and with Laravel framework.
       -- Integration of user-facing elements developed by front-end developers.
@@ -24,11 +24,12 @@ I'm a full-stack web developer.
       -- Solve complex performance problems.
       -- Ensuring that buisness requirments and functional specifications for the module coded by the     team are tested and fulfilled before the code is deliverd for integration.
    
-   2.Vinoth - UI Developer
+   2.Grathicoss - UI Developer
       -- Feb, 2014 - Apr, 2016.
       -- Collabrate with UX Designer for web designing.
       -- Build reusable code and libraries for future use.
       -- Create quality mockups and prototypes.
+      -- Worked on HTML, CSS, Bootstrap and Jquery.
    
    3.Black and Green Corporation - Proprietor
       -- Jan, 2013 - Dec, 2013.
