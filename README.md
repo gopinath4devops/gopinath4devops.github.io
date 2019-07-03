@@ -22,7 +22,7 @@ I'm a full-stack web developer.
       -- Writing Clean structured and well documented code.
       -- Build efficient, testable, and reusable PHP modules.
       -- Solve complex performance problems.
-      -- Ensuring that buisness requirments and functional specifications for the module coded by the     team are tested and fulfilled before the code is deliverd for integration.
+    
    
    2.Grathicoss - UI Developer
       -- Feb, 2014 - Apr, 2016.
