@@ -14,7 +14,7 @@ I'm a full-stack web developer.
 
 
 2.Exprience:   
-   1.Yaksha Visual Technologies - PHP Developer
+   1.****** ******* Technologies - PHP Developer
       -- May, 2016 - Present.
       -- Working in PHP, MYSQL, Jquery and with Laravel framework.
       -- Integration of user-facing elements developed by front-end developers.
@@ -24,21 +24,21 @@ I'm a full-stack web developer.
       -- Solve complex performance problems.
     
    
-   2.Grathicoss - UI Developer
+   2.*********** - UI Developer
       -- Feb, 2014 - Apr, 2016.
       -- Collabrate with UX Designer for web designing.
       -- Build reusable code and libraries for future use.
       -- Create quality mockups and prototypes.
       -- Worked on HTML, CSS, Bootstrap and Jquery.
    
-   3.Black and Green Corporation - Proprietor
+   3.***** and ***** Corporation - Proprietor
       -- Jan, 2013 - Dec, 2013.
       -- Fresh, Processed Fruits and Vegetables Export.
       -- Identifing International buyers, Meeting and discussion, Negotiation and Fixing Price and        Terms, Order Confirmation.
       -- Sourcing, Processing, Packing, Pre Cooling, Stuffing into container as per Destination           country standards.
       -- Shipping, Documentation, Accounting, Handling Bank and Foreign Currencies.
   
-   4.Kodai's West Hill Farms - Managing Partner
+   4.****** West ***** Farms - Managing Partner
       -- Aug, 2011 - Nov, 2012.
       -- Design and Implementing Mushroom Farm.
       -- Composting, cultivation, Harvesting, Packing and Management.
@@ -70,5 +70,3 @@ I'm a full-stack web developer.
    Github: https://github.com/gopinath4devops
    Website: http://gopinath4devops.github.io
 
-6.Resume:
-   https://gopinath4devops.github.io/gopinathak_resume.pdf
